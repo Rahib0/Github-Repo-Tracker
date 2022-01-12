@@ -10,7 +10,7 @@ export default function SingleRepo({ repo }) {
             <div className ='card'>
                 <h1 role='title'>{repo.name}</h1>
                 <p role='description'>{description }</p>
-                <a href={repo.html_url}><button role='button'>Click here to see on Git</button></a>
+                <a href={repo.html_url}>Click here to see on Git</a>
                 <p role='stargazers_count'>Stargazers: {repo.stargazers_count}</p>
                 <p role='watchers_count'>Watchers: {repo.watchers_count}</p>
                 <p className='forked'>Forked: {repo.forks_count}</p>

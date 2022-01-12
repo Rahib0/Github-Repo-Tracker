@@ -3,7 +3,7 @@ import { SingleRepo } from '..'
 import './style.css';
 
 export default function RepoList({ list }) {
-    // const renderRepos = list.map( repo => {<SingleRepo repo={repo} />})
+    // console.log(list)
     return (
         <>
            <div className='flex-container'>

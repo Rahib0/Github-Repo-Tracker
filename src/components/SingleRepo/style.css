@@ -1,9 +1,33 @@
 
+.card{
+    overflow: auto;
+}
+
+/* width */
+.card::-webkit-scrollbar {
+    width: 10px;
+}
+/* Track */
+.card::-webkit-scrollbar-track {
+    background: #f1f1f100;
+}
+/* Handle */
+.card::-webkit-scrollbar-thumb {
+    background-color: #00000067;
+    border-radius: 20px;
+    border: 6px solid transparent;
+}
+/* Handle on hover */
+.card::-webkit-scrollbar-thumb:hover {
+    background: #a8bbbf;
+}
+
 .card>p{
   display: flex;
   justify-content: center;
 }
 .card>h1{
+  text-align: center;
   display: flex;
   word-break: break-all;
   justify-content: center;
@@ -12,4 +36,6 @@
 .card>a{
   display: flex;
   justify-content: center;
+  color: white;
+  
 }
