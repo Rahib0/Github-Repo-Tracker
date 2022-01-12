@@ -11,3 +11,15 @@
   .container {
     padding: 2px 16px;
   }
+.card>p{
+  display: flex;
+  justify-content: center;
+}
+.card>h1{
+  display: flex;
+  justify-content: center;
+}
+.card>a{
+  display: flex;
+  justify-content: center;
+}

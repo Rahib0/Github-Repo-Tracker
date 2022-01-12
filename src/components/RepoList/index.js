@@ -6,7 +6,7 @@ export default function RepoList({ list }) {
     // const renderRepos = list.map( repo => {<SingleRepo repo={repo} />})
     return (
         <>
-           <div>
+           <div className='flex-container'>
                 <section>
                     {list.map(( repo, n ) => <SingleRepo key={n} repo={repo} />)}
                 </section>

@@ -16,9 +16,9 @@ export default function UserSearchForm({ getResult }) {
     }
     
     return (
-        <form onSubmit={ handleSubmit }>
-            <input type="text" placeholder='Enter Github Username' value={input} onChange={handleChange}></input>
-            <input type='submit' value='Search' />
+        <form onSubmit={ handleSubmit } className='form'>
+            <input type="text" placeholder='Enter Github Username' value={input} onChange={handleChange} className='username'></input>
+            <input type='submit' value='Search' className='button' />
         </form>
     )
 }
