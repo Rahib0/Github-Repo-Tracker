@@ -1,12 +1,21 @@
-/* .flex-container{
+section{
   display: flex;
   flex-direction: row;
-} */
+  flex-wrap: wrap;
+}
+
+section {
+  display: grid;
+  grid-template-columns: 30rem 30rem 30rem;
+  margin: 10px;
+}
 .card {
-  background-color: thistle;
+  background-color: rgb(4, 39, 61);
     box-shadow: 0 4px 8px 0 rgba(0,0,0,0.2);
     transition: 0.3s;
+    border-style: solid;
     border-radius: 5px; 
+    border-color: darkblue;
   }
 
   

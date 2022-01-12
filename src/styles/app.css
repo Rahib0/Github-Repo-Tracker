@@ -1,25 +1,17 @@
 body{
-  background-color: rgb(8, 88, 32);
+  background-color: rgba(0, 0, 0, 0.541);
   color: white;
 }
 
-.card {
-
-    box-shadow: 0 4px 8px 0 rgba(0,0,0,0.2);
-    transition: 0.3s;
-  }
-  
-.card:hover {
-  box-shadow: 0 8px 16px 0 rgba(0,0,0,0.2);
+h1{
+  display: flex;
+  justify-content: center;
+}
+.loading{
+  display: flex;
+  justify-content: center;
 }
 
-  .container {
-    padding: 2px 16px;
-  }
 
-  form{
-      justify-content: center;
-      align-self: center;
-      width: auto;
-  }
+
   

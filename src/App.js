@@ -30,8 +30,9 @@ function App() {
 
 	return (
 		<>
+			<h1>Github Repo Finder</h1>
 			<UserSearchForm getResult={getResult} />
-			{loading ? <p>loading...</p> : <RepoList list={repoList} />}
+			{loading ? <p className='loading'>loading...</p> : <RepoList list={repoList} />}
 		</>
 	)
 }
