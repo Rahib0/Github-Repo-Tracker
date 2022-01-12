@@ -5,7 +5,9 @@
 }
 .card>h1{
   display: flex;
+  word-break: break-all;
   justify-content: center;
+
 }
 .card>a{
   display: flex;
