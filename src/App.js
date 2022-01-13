@@ -21,6 +21,7 @@ function App() {
 		setLoading(true)
 		axios.get(`https://api.github.com/users/${username}/repos?page=${currentPage}`)
 		.then(res => {
+			console.log(res.data)
 			function SelectProps(repo) {
 				const { name, html_url, description, forks_count, stargazers_count, watchers_count } = repo
 				return { name, html_url, description, forks_count, stargazers_count, watchers_count }
@@ -30,6 +31,7 @@ function App() {
 			
 			axios.get(`https://api.github.com/users/${username}/repos?page=${currentPage+1}`)
 			.then(res => {
+				console.log(res.data.length)
 				if (res.data.length > 0) {setNextPage(true)}
 			}).catch(err => {
 				setNextPage(false)})
@@ -43,11 +45,12 @@ function App() {
 
 
 	const getResult = (search) => {
-		setUsername(search)
+		setUsername(search.toLowerCase())
 	}
 
 	return (
 		<>
+			{console.log(loading, warning, currentPage, nextPage, name, username, repoList)}
 			<h1>Github Repo Finder</h1>
 			<UserSearchForm getResult={getResult} />
 			
