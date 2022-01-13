@@ -1,0 +1,37 @@
+ .form{
+     display: flex;
+     justify-content: center;
+ }
+ 
+ .username{
+    display: flex;
+    justify-content: center;
+    align-self: center;
+    flex-direction: column;
+    margin: 20px;
+    padding:10px 20px;
+    border-radius: 20px;
+}
+
+.username:hover{
+    color: rgba(0, 0, 0, 0.7);
+    box-shadow: 5px 5px rgba(0, 0, 0, 0.300);
+}
+
+.search_butt{
+    display: flex;
+    justify-content: center;
+    align-self: center;
+    flex-direction: column;
+    padding:5px 15px;
+    margin: 15px;
+    background-color: rgb(99, 99, 99);
+    color: rgba(255, 255, 255, 0.5);
+    outline: rgba(180, 180, 180, 0.055) solid 1px;
+}
+
+.search_butt:hover{
+    color: rgba(255, 255, 255, 1);
+    box-shadow: 2px 2px rgba(0, 0, 0, 0.300);
+    cursor: pointer;
+}
